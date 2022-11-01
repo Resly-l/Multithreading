@@ -24,8 +24,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{05f39204-8232-4d4a-a19a-98a02fd50d5f}</ProjectGuid>
-    <RootNamespace>My00racecondition</RootNamespace>
+    <ProjectGuid>{d6015c26-9c6c-42b3-84d8-4bbea86d3ce8}</ProjectGuid>
+    <RootNamespace>My01hardwaresynchronization</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -74,12 +74,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>../output/00_race_condition/</OutDir>
-    <IntDir>../output/00_race_condition/</IntDir>
+    <OutDir>../output/01_hardware_syncronization/</OutDir>
+    <IntDir>../output/01_hardware_syncronization/</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>../output/00_race_condition/</OutDir>
-    <IntDir>../output/00_race_condition/</IntDir>
+    <OutDir>../output/01_hardware_syncronization/</OutDir>
+    <IntDir>../output/01_hardware_syncronization/</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

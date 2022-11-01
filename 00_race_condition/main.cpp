@@ -18,10 +18,8 @@ void WorkHard(double& sum, std::mutex& mutex)
 {
 	for (int i = 0; i < 2000000; i++)
 	{
-		mutex.lock();
-		// std::lock_guard guard{ mutex };
-		sum += (sin(RNG::Generate()) + cos(RNG::Generate()));
-		mutex.unlock();
+		std::lock_guard guard{ mutex };
+		sum += sin(RNG::Generate()) + cos(RNG::Generate());
 	}
 }
 
@@ -34,10 +32,10 @@ int main()
 	double sum = 0.0;
 
 	timer.Mark();
-	threads.push_back(std::thread{ WorkHard, std::ref(sum), std::ref(mutex) });
-	threads.push_back(std::thread{ WorkHard, std::ref(sum), std::ref(mutex) });
-	threads.push_back(std::thread{ WorkHard, std::ref(sum), std::ref(mutex) });
-	threads.push_back(std::thread{ WorkHard, std::ref(sum), std::ref(mutex) });
+	for (int i = 0; i < 4; i++)
+	{
+		threads.push_back(std::thread{ WorkHard, std::ref(sum), std::ref(mutex) });
+	}
 
 	for (auto& thread : threads)
 	{
