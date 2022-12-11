@@ -7,11 +7,14 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "00_race_condition", "00_rac
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "include", "include", "{6676ECC1-DE55-499B-ACEC-33205A5AD657}"
 	ProjectSection(SolutionItems) = preProject
+		include\dataset.h = include\dataset.h
 		include\rng.h = include\rng.h
 		include\timer.h = include\timer.h
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01_hardware_synchronization", "01_hardware_synchronization\01_hardware_synchronization.vcxproj", "{D6015C26-9C6C-42B3-84D8-4BBEA86D3CE8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_condition_variable", "02_condition_variable\02_condition_variable.vcxproj", "{84481D35-DF76-4716-AA29-5D68E290ACC5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +40,14 @@ Global
 		{D6015C26-9C6C-42B3-84D8-4BBEA86D3CE8}.Release|x64.Build.0 = Release|x64
 		{D6015C26-9C6C-42B3-84D8-4BBEA86D3CE8}.Release|x86.ActiveCfg = Release|Win32
 		{D6015C26-9C6C-42B3-84D8-4BBEA86D3CE8}.Release|x86.Build.0 = Release|Win32
+		{84481D35-DF76-4716-AA29-5D68E290ACC5}.Debug|x64.ActiveCfg = Debug|x64
+		{84481D35-DF76-4716-AA29-5D68E290ACC5}.Debug|x64.Build.0 = Debug|x64
+		{84481D35-DF76-4716-AA29-5D68E290ACC5}.Debug|x86.ActiveCfg = Debug|Win32
+		{84481D35-DF76-4716-AA29-5D68E290ACC5}.Debug|x86.Build.0 = Debug|Win32
+		{84481D35-DF76-4716-AA29-5D68E290ACC5}.Release|x64.ActiveCfg = Release|x64
+		{84481D35-DF76-4716-AA29-5D68E290ACC5}.Release|x64.Build.0 = Release|x64
+		{84481D35-DF76-4716-AA29-5D68E290ACC5}.Release|x86.ActiveCfg = Release|Win32
+		{84481D35-DF76-4716-AA29-5D68E290ACC5}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
